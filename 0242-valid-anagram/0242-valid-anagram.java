@@ -1,5 +1,7 @@
-class Solution {
-    public boolean isAnagram(String s, String t) {
+class Solution
+ {
+    public boolean isAnagram(String s, String t) 
+    {
         int n=t.length();
         int m=s.length();
         char arr1[]=s.toCharArray();
@@ -7,7 +9,8 @@ class Solution {
         Arrays.sort(arr1);
         int count=0;
         Arrays.sort(arr2);
-        if(n==m){
+        if(n==m)
+        {
         for(int i=0;i<n;i++)
         {
             if(arr1[i]==arr2[i])
@@ -15,10 +18,10 @@ class Solution {
                 count++;
             }
         }
+        }
         if(count==n)
             return true;
         else
             return false;
-    }
     }
 }
