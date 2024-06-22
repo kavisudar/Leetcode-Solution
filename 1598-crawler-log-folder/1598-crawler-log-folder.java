@@ -4,7 +4,10 @@ class Solution {
         int count=0;
         for(int i=0;i<logs.length;i++)
         {
-            
+            if(count<0)
+            {
+                count=0;
+            }
             if(logs[i].equals("./"))
             {
                 continue;
