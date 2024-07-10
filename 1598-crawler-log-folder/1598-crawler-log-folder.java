@@ -19,10 +19,6 @@ class Solution {
             else{
                 count++;
             }
-            // if((logs[i].equals("../")) && (log[i+1].equals("../")))
-            // {
-            //     continue;
-            // }
         }
         return count=(count<0)? 0:count;
     }
